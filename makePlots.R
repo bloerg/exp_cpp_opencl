@@ -14,25 +14,25 @@ plothist <- function(h) {
     temp_margins[3]<-1 # top margin = 1
     temp_margins[1]<-3.5 # bottom margin = 3
     par(mar=temp_margins)
-  plot(
-	cuda$ebin, 
-	cuda[, 2+2*h], 
-	type="S",
+    plot(
+    cuda$ebin, 
+    cuda[, 2+2*h], 
+    type="S",
         xaxt="n",
         yaxt="n",
         ylab="",
         xlab=""
-  )
-  lines(
-	cl$ebin, 
-	cl[, 2+2*h], 
-	type="S", 
-	col="red",
+    )
+    lines(
+    cl$ebin, 
+    cl[, 2+2*h], 
+    type="S", 
+    col="red",
         xaxt="n",
         yaxt="n",
         ylab="",
         xlab=""
-  )
+    )
   magaxis(
         side=1:4, 
         labels=c(1,1,0,0), 
